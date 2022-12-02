@@ -1,4 +1,4 @@
-package main
+package gogit
 
 type ObjectType int
 
@@ -8,12 +8,14 @@ const (
 	CommitType
 )
 
-func (o ObjectType)String() string {
+func (o ObjectType) String() string {
 	switch o {
 	case BlobType:
 		return "blob"
 	case TreeType:
 		return "tree"
+	case CommitType:
+		return "commit"
 	default:
 		return "unknown"
 	}
@@ -22,5 +24,5 @@ func (o ObjectType)String() string {
 type Object interface {
 	Type() ObjectType
 	HHash() string
-	String() string
+	HashObject() error
 }
