@@ -13,9 +13,9 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
-**/.idea/
-**/.vscode/
-**/.fleet/
-
 .idea/
+.vscode/
+.fleet/
 .git/
+
+go-git
