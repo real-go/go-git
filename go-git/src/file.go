@@ -10,7 +10,7 @@ func openFile(f string, flag int) (*os.File, error) {
 	if checkErr := checkOrCreate(path.Dir(f)); checkErr != nil {
 		return nil, checkErr
 	}
-	file, err := os.OpenFile(f, flag, 0755)
+	file, err := os.OpenFile(f, flag, 0644)
 	if err != nil {
 		log.Printf("open file error, %s", err.Error())
 	}

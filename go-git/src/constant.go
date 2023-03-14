@@ -6,4 +6,6 @@ const (
 	ConstantHEADRefFile = "HEAD"
 
 	TempTreeFile = ".tree"
+
+	ConstantIndexFile = ".git/index"
 )

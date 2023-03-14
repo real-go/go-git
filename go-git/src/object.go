@@ -20,9 +20,3 @@ func (o ObjectType) String() string {
 		return "unknown"
 	}
 }
-
-type Object interface {
-	Type() ObjectType
-	HHash() string
-	HashObject() error
-}
